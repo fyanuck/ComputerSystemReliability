@@ -49,11 +49,10 @@ def get_T(gamma):
         P_list.append(area_sum)
         area_sum -= stat_densities[i] * interval_len
 
-    gamma = 0.62
     p_less = max([p for p in P_list if p < gamma])
     p_more = min([p for p in P_list if p > gamma])
 
-    index_less = P_list.index(p_less)
+    #index_less = P_list.index(p_less)
     index_more = P_list.index(p_more)
 
     d = (p_more - gamma) / (p_more - p_less)
