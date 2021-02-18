@@ -61,7 +61,6 @@ def get_T(gamma):
 
 
 def p_unfail(time):
-    time = 275
     Sum = 1
     whole_intervals = int(time // interval_len)
     for i in range(whole_intervals):
