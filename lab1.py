@@ -31,6 +31,11 @@ ten_intervals = []
 stat_densities = []
 P_list = []
 
+if not 0 <= gamma <= 1 or not len(hour_table) or time1 > max(hour_table) or time2 > max(hour_table) \
+        or time1 < 0 or time2 < 0:
+    print("Incorrect values")
+    exit(0)
+
 
 def get_Tcp():
     return sum(hour_table) / len(hour_table)
